@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <form class="form" id="sign-in-form">
+                <h1 id="heading">Login</h1>
+                <div class="field">
+                    <span class="material-icons">alternate_email</span>
+                    <input autocomplete="off" placeholder="Username" class="input-field" type="text"/>
+                </div>
+                <div class="field">
+                    <span class="material-icons">lock_open</span>
+                    <input placeholder="Password" class="input-field" type="password"/>
+                </div>
+                <button class="button">Login</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+        <div class="form-container sign-up-container">
+            <form class="form" id="sign-up-form">
+                <h1 id="heading">Sign Up</h1>
+                <div class="field">
+                    <span class="material-icons">person</span>
+                    <input autocomplete="off" placeholder="Name" class="input-field" type="text"/>
+                </div>
+                <div class="field">
+                    <span class="material-icons">alternate_email</span>
+                    <input autocomplete="off" placeholder="Email" class="input-field" type="email"/>
+                </div>
+                <div class="field">
+                    <span class="material-icons">lock_open</span>
+                    <input placeholder="Password" class="input-field" type="password"/>
+                </div>
+                <button class="button">Sign Up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signInOverlay">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost" id="signUpOverlay">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
